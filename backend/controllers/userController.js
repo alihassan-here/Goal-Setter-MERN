@@ -41,10 +41,10 @@ const regiseterUser = asyncHandler(async (req, res) => {
         res.status(400);
         throw new Error('Invlaid User Data');
     }
-    //Create token
-    const token = jwt.sign({ id: user._id }, process.env.JWT_SECRET, {
-        expiresIn: process.env.JWT_EXPIRES_IN
-    });
+    // //Create token
+    // const token = jwt.sign({ id: user._id }, process.env.JWT_SECRET, {
+    //     expiresIn: process.env.JWT_EXPIRES_IN
+    // });
 });
 
 //@desc Login/Authenticate User
